@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+	<header>
+        <style>
+            header {
+                background-color: white;
+                color: rgb(0, 0, 0);
+                padding: 10px 0;
+                position: fixed;
+                width: 100%;
+                z-index: 100;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            }
+             
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 5px auto;
+                padding: 0 20px;
+            }
+             
+            .logo {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #40b736;
+            }
+             
+            .nav-links {
+                list-style: none;
+                display: flex;
+            }
+             
+            .nav-links li {
+                margin-right: 20px;
+            }
+             
+            .nav-links a {
+                color: rgb(0, 0, 0);
+                padding: 10px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+             
+            .nav-links a:hover {
+                background-color: #40b736;
+                border-radius: 4px;
+                color: white;
+            }
+        </style>
+		<nav>
+			<div class="logo">WearMe</div>
+			<ul class="nav-links">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="about">
+        <style>
+            .about {
+                background: rgb(224, 251, 222);
+                background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+                padding: 100px 0 20px 0;
+                text-align: center;
+            }
+             
+            .about h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+             
+            .about p {
+                font-size: 1rem;
+                color: #323030;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+             
+            .about-info {
+                margin: 2rem 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+            }
+             
+            .about-img {
+                width: 20rem;
+                height: 20rem;
+             
+            }
+             
+            .about-img img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                object-fit: contain;
+            }
+             
+            .about-info p {
+                font-size: 1.3rem;
+                margin: 0 2rem;
+                text-align: justify;
+            }
+             
+            button {
+                border: none;
+                outline: 0;
+                padding: 10px;
+                margin: 2rem;
+                font-size: 1rem;
+                color: white;
+                background-color: #40b736;
+                text-align: center;
+                cursor: pointer;
+                width: 15rem;
+                border-radius: 4px;
+            }
+             
+            button:hover {
+                background-color: #1f9405;
+            }
+             
+        </style>
+		<h1>About Us</h1>
+		<p style="font-weight: bold">WearMe is a Popular Eyewear brand...</p>
+		<div class="about-info">
+			<div class="about-img">
+				<img src=
+"https://as2.ftcdn.net/v2/jpg/02/38/33/39/1000_F_238333915_FR1aIJ0MFqp9eqdqwlTp89aLLX22wYd2.jpg" alt="WearMe">
+			</div>
+			<div>
+	<p>Celebrate Vision with Us. At [WearMe], we are passionate about enhancing your visual experience. We believe that eyewear is not just an accessory; it's an expression of your unique style and personality. Our journey began with a vision to provide top-quality eyewear that combines fashion, functionality, and affordability. We are dedicated to delivering the latest trends in eyewear, ensuring that you not only see the world more clearly but also look your best while doing it. With a commitment to exceptional craftsmanship and customer satisfaction, [WearMe] is your trusted partner in the world of eyewear.</p>
+				<button>Read More...</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="Products">
+        <style>
+            .team {
+                padding: 30px 0;
+                text-align: center;
+            }
+             
+            .team h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+             
+            .team-cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 20px;
+            }
+             
+            .card {
+                background-color: rgb(63, 191, 180);
+                border-radius: 6px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+                overflow: hidden;
+                transition: transform 0.2s, box-shadow 0.2s;
+                width: 18rem;
+                height: 25rem;
+                margin-top: 10px;
+            }
+             
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+            }
+             
+            .card-img {
+                width: 18rem;
+                height: 12rem;
+            }
+             
+            .card-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+             
+            .card-info button {
+                margin: 2rem 1rem;
+            }
+             
+            .card-name {
+                font-size: 2rem;
+                margin: 10px 0;
+            }
+             
+            .card-role {
+                font-size: 1rem;
+                color: #888;
+                margin: 5px 0;
+            }
+             
+            .card-email {
+                font-size: 1rem;
+                color: #555;
+            }
+             
+        </style>
+		<h1>Our Top Products</h1>
+		<div class="team-cards">
+			<!-- Cards here -->
+			<!-- Card 1 -->
+			<div class="card">
+				<div class="card-img">
+					<img src=
+"https://cdn.shopify.com/s/files/1/0601/5415/1102/products/vera_tortoise_front_large.jpg?v=1682369002" alt="Product 1">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Cat Eye</h2>
+					<p class="card-For">Best For: Female</p>
+					<p class="card-Price">Price: 10 $</p>
+					<p><button class="button">Buy</button></p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="card">
+				<div class="card-img">
+					<img src=
+"https://cdn.shopify.com/s/files/1/0601/5415/1102/products/sorellina-tortoise-front-1-1_1_large.jpg?v=1682648342" alt="Product 2">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Myrtle</h2>
+					<p class="card-For">Best For: Both Male and Female</p>
+					<p class="card-Price">Price: 9 $</p>
+					<p><button class="button">Buy</button></p>
+				</div>
+			</div>
+			<!-- Card 3 -->
+			<div class="card">
+				<div class="card-img">
+					<img src=
+"https://cdn.shopify.com/s/files/1/0601/5415/1102/products/killa-greentortoise-front-1-1_large.jpg?v=1681838936" alt="Product 3">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Killa</h2>
+					<p class="card-For">Best For: Both Male and Female</p>
+					<p class="card-Price">Price: 12 $</p>
+					<p><button class="button">Buy</button></p>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section>
+        <div class="formBox">
+            <h2>Contact Us</h2>
+            <p>You will hear from us at the earliest!</p>
+            <form action="#">
+                <div class="nameInp">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="Full Name" name="name" id="name">
+
+                </div>
+                <div class="mailInp">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="mail" id="mail" placeholder="Email">
+                </div>
+                <div class="phoneInp">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" name="phone" id="phone" placeholder="Phone" min="100000" max="9999999999">
+                </div>
+                <div class="queryInp">
+                    <textarea name="query" id="query" cols="30" rows="5"
+                        placeholder="Any comment or your query"></textarea>
+                </div>
+                <div class="submitBtn">
+                    <button id="btn" onclick="notif()">Send</button>
+                </div>
+            </form>
+            <p class="extra">YOU CAN ALSO CONTACT US AT <br>Phone: 181-1711-322<br> Email: abc@gmail.com<br>Address: Whitefield, Bengaluru, Karnataka</p>
+        </div>
+    </section>
+	<footer>
+        <style>
+            footer {
+                background-color: #222;
+                color: yellowgreen;
+                text-align: center;
+                padding: 20px 0;
+            }
+             
+            @media (max-width: 768px) {
+                nav {
+                    display: block;
+                }
+             
+                .logo {
+                    text-align: center;
+                }
+             
+                .nav-links {
+                    margin-top: 3rem;
+                    justify-content: space-between;
+                }
+             
+                .nav-links li {
+                    margin-right: 0;
+                }
+             
+                .about h1 {
+                    font-size: 2rem;
+                }
+             
+                .about p {
+                    font-size: 0.9rem;
+                }
+             
+                .about-info {
+                    flex-direction: column;
+                    text-align: center;
+                }
+             
+                .about-img {
+                    width: 60%;
+                    height: 60%;
+                    margin-bottom: 1rem;
+                }
+             
+                .about-info p {
+                    margin: 1rem 2rem;
+                }
+             
+                .about-info button {
+                    margin: 2rem 3rem;
+                    width: 15rem;
+                }
+             
+                .team {
+                    margin: 0 1rem;
+                }
+            }
+        </style>
+		<p>© 2023 WearMe. All Rights Reserved.</p>
+	</footer>
+</body>
+</html>
